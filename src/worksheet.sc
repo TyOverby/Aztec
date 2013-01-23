@@ -1,0 +1,2 @@
+"\\".replaceFirst("\\\\","a")
+"\\".endsWith("\\")
