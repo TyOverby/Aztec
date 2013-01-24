@@ -5,12 +5,15 @@ import io.Source
 
 object Lexer {
     private[this]
-    def countLeading(in: String):Int = {
+    def countLeading(in: String): Int = {
         in.takeWhile{
             case ' '  => true
             case '\n' => true
             case _ => false
         }.size
+    }
+    def isSymbolic(in: String): Boolean =  in.exists {
+            case x => !(x.isDigit || x.isLetter)
     }
 
     def lex(input: Source):List[Token] = {
@@ -30,22 +33,16 @@ object Lexer {
         def genToken(lineWithNumber: (String, Int)): Token = {
             val (line, number) = lineWithNumber
 
-            if (line.trim.length==0) return EmptyLine(number)
+            if (line.trim.length == 0) return EmptyLine(number)
 
-            val indents = countLeading(line)
-            val indents_removed = line.substring(indents)
+            val indent = countLeading(line)
+            val broken = line.trim.split(" ")
+            val first = broken.head
+            val (symbol, rest) = if (isSymbolic(first))
+                                    (Some(first), broken.tail.mkString(" "))
+                                    else (None, broken.mkString(" "))
 
-            val symbolEnd = indents_removed.indexWhere{
-                case ' '  => true
-                case '\t' => true
-                case _    => false
-            }
-            val symbol = indents_removed.substring(0,symbolEnd)
-            val isSymbolic = symbol.exists{ case x => !(x.isLetter || x.isDigit) }
-
-            val rest = indents_removed.substring(if (isSymbolic) symbolEnd else 0)
-
-            VerboseToken((if (isSymbolic) Some(symbol) else None), rest, indents, number)
+            VerboseToken(symbol,rest,indent,number)
         }
 
         lineReader.map(lexLine).map(genToken).toList

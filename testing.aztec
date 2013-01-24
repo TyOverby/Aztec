@@ -1,20 +1,7 @@
-This is a title
-    * something else
-    " more
-    " quoted
-        "inner quotes, yay!
-    " other quoted
-    " weeee
-
-    " and some
-    * another?
-* this is a bullet
-" this is a paragraph
-1. this is a numbered list
-
-$ this is some math
-# this is a comment
-* 0 indent
-    * some indent
-        * more indent \
-          in testing
+Title One
+    * Bullet 1
+    * Bullet 2
+    * Bullet 3
+    * Bullet 4
+    * Bullet 5
+Title Two

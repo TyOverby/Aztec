@@ -11,6 +11,8 @@ sealed trait Token {
 case class VerboseToken(symbol: Option[String], con: String, indent: Int, lineNumber: Int) extends Token{
     val content = Some(con)
 }
+
+// TODO: Get rid of some of the empty line shit
 case class EmptyLine(lineNumber: Int) extends Token{
     val symbol:  Option[String] = None
     val content: Option[String] = None
