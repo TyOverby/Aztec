@@ -4,13 +4,6 @@
     <root id="archive" name="Aztec.jar">
       <element id="module-output" name="Aztec" />
       <element id="extracted-dir" path="C:/Program Files (x86)/scala/lib/scala-library.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="C:/Program Files (x86)/scala/lib/scala-swing.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="C:/Program Files (x86)/scala/lib/scala-dbc.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="C:/Program Files (x86)/scala/lib/scala-compiler.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="C:/Program Files (x86)/scala/lib/jline.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="C:/Program Files (x86)/scala/lib/scala-partest.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="C:/Program Files (x86)/scala/lib/scalacheck.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="C:/Program Files (x86)/scala/lib/scalap.jar" path-in-jar="/" />
       <element id="dir-copy" path="C:/Program Files (x86)/scala/bin" />
     </root>
   </artifact>
