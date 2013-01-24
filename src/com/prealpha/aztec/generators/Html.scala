@@ -8,15 +8,17 @@ object Html extends Generator{
     val shortName: String = "html"
 
 
-    def genStart(symbol: Option[String]): String = symbol match {
-        case BULLET  => "<ul>"
-        case QUOTE   => "<p>"
-        case COMMENT => "<!--"
-        case TITLE   => "<div class='title'>"
-        case _       => "<!-- UNKNOWN START SYMBOL: " + symbol.get
+    def genStart(token: Token): String = removeBlank(token){
+        token.symbol match {
+            case BULLET  => "<ul>"
+            case QUOTE   => "<p>"
+            case COMMENT => "<!--"
+            case TITLE   => "<div class='title'>"
+            case _       => "<!-- UNKNOWN START SYMBOL: " + token.symbol.get
+        }
     }
 
-    def gen(token: Token): String ={
+    def gen(token: Token): String = {
         val content = token.content.getOrElse("")
         token.symbol match {
             case BULLET  => "<li>" + content + "</li>"
@@ -27,16 +29,18 @@ object Html extends Generator{
         }
     }
 
-    def genEnd(symbol: Option[String]): String = symbol match {
-        case BULLET  => "</ul>"
-        case QUOTE   => "</p>"
-        case COMMENT => "-->"
-        case TITLE   => "</div>"
-        case _       => "UNKNOWN END SYMBOL: " + symbol + " -->"
+    def genEnd(token: Token): String = removeBlank(token){
+        token.symbol match {
+            case BULLET  => "</ul>"
+            case QUOTE   => "</p>"
+            case COMMENT => "-->"
+            case TITLE   => "</div>"
+            case _       => "UNKNOWN END SYMBOL: " + token.symbol + " -->"
+        }
     }
 
     def postProcess(input: List[String]): List[String] = input
 
-    def documentStart(document: List[String]): List[String] = List("<html>", "<body>")
-    def documentEnd(document: List[String]): List[String] = List("</body>", "</html>")
+    def documentStart(document: List[Token]): List[String] = List("<html>", "<body>")
+    def documentEnd(document: List[Token]): List[String] = List("</body>", "</html>")
 }

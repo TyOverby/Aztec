@@ -24,7 +24,7 @@ object Transformer{
                     // without modifying the stack.
                     if (top.symbol == head.symbol){
                         val added = gen.gen(head)
-                        innert(ts.tail, stack, acc :+ added)
+                        innert(ts.tail, stack, acc ++ List(added))
                      } else {
                         // Otherwise, End the current top and
                         // start another one for the head.
@@ -32,31 +32,31 @@ object Transformer{
                         // without the previous one on the stack,
                         // but with our current head on it.
 
-                        val added = List(gen.genEnd(top.symbol),
-                                         gen.genStart(head.symbol),
+                        val added = List(gen.genEnd(top),
+                                         gen.genStart(head),
                                          gen.gen(head))
-                        innert(ts.tail, stack.pop.push(head), added ++ acc)
+                        innert(ts.tail, stack.pop.push(head), acc ++ added)
                      }
                 // If the head is greater than the top, we need
                 // to start a new starting point and add our
                 // generated head.  Add the new head to the stack
                 case (t, h) if t < h => {
-                    val added = List(gen.genStart(head.symbol),
+                    val added = List(gen.genStart(head),
                                     gen.gen(head))
                     innert(ts.tail, stack.push(head),acc ++ added)
                 }
                 // If the head is less than the top, then we need to close top
                 // and try again at one level below
                 case (t, h) if t > h => {
-                    val added = gen.genEnd(top.symbol)
-                    innert(ts, stack.pop, acc :+ added)
+                    val added = gen.genEnd(top)
+                    innert(ts, stack.pop, acc ++ List(added))
                 }
             }
         }
 
         val firstPass = innert(tokens ++ List(NonToken), Stack(NonToken), Nil)
 
-        gen.postProcess((gen.documentStart(firstPass)++firstPass++gen.documentEnd(firstPass)).toList)
+        gen.postProcess((gen.documentStart(tokens)++firstPass++gen.documentEnd(tokens)).toList)
     }
 
 

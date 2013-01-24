@@ -11,7 +11,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Lexer.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359007814473" ignored="false" />
     <file path="/Token.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358992986832" ignored="false" />
-    <file path="/testing.aztec" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358997756547" ignored="false" />
+    <file path="/testing.aztec" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359069002457" ignored="false" />
     <file path="/Tester.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358900351923" ignored="false" />
     <file path="/worksheet.sc" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358676986800" ignored="false" />
     <file path="/NodeTree.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358681002372" ignored="false" />
@@ -21,13 +21,13 @@
     <file path="/Node.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358732734729" ignored="false" />
     <file path="/Parser.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358901975354" ignored="false" />
     <file path="/a.dummy" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358734011294" ignored="false" />
-    <file path="/Generator.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359007100303" ignored="false" />
+    <file path="/Generator.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359030302804" ignored="false" />
     <file path="/ParserTests.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358814811078" ignored="false" />
-    <file path="/fragment.java" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359002062456" ignored="false" />
+    <file path="/fragment.java" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359029352482" ignored="false" />
     <file path="$PROJECT_DIR$/src/com/prealpha/aztec/package.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358991494063" ignored="false" />
-    <file path="/Transformer.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359000133976" ignored="false" />
-    <file path="/Html.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358998200714" ignored="false" />
-    <file path="/Latex.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359009003175" ignored="false" />
+    <file path="/Transformer.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359068304574" ignored="false" />
+    <file path="/Html.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359068319423" ignored="false" />
+    <file path="/Latex.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359069161742" ignored="false" />
     <file path="/CommandLineInterface.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359003391561" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359008253832" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -90,7 +90,7 @@
             <file leaf-file-name="testing.aztec" pinned="false" current="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/testing.aztec">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state line="6" column="167" selection-start="94" selection-end="94" vertical-scroll-proportion="0.106583074">
+                  <state line="6" column="32" selection-start="96" selection-end="96" vertical-scroll-proportion="0.20944558">
                     <folding />
                   </state>
                 </provider>
@@ -110,7 +110,7 @@
       <file leaf-file-name="Generator.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Generator.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="62" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
+            <state line="10" column="40" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,17 +119,28 @@
       <file leaf-file-name="Latex.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/generators/Latex.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="24" selection-start="1451" selection-end="1451" vertical-scroll-proportion="0.49119717">
+            <state line="57" column="36" selection-start="1991" selection-end="1991" vertical-scroll-proportion="0.5811088">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Html.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/generators/Html.scala">
+      <file leaf-file-name="GenMapFactory.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files (x86)/scala/src/scala-library-src.jar!/scala/collection/generic/GenMapFactory.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="60" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
+            <state line="47" column="6" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Transformer.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Transformer.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="58" column="85" selection-start="2544" selection-end="2544" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="method#innert#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,7 +148,7 @@
       <file leaf-file-name="Lexer.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Lexer.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="48" selection-start="700" selection-end="704" vertical-scroll-proportion="0.0">
+            <state line="5" column="7" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -158,16 +169,16 @@
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Parser.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Token.scala" />
         <option value="$PROJECT_DIR$/test/com/prealpha/aztec/Tester.scala" />
-        <option value="$PROJECT_DIR$/testing.aztec" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/beta/Generator.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/beta/generators/Html.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/beta/generators/Latex.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/beta/Transformer.scala" />
-        <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Transformer.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/CommandLineInterface.scala" />
-        <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Generator.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Lexer.scala" />
+        <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Generator.scala" />
+        <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Transformer.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/generators/Html.scala" />
+        <option value="$PROJECT_DIR$/testing.aztec" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/generators/Latex.scala" />
       </list>
     </option>
@@ -204,8 +215,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -319,18 +330,18 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.prealpha.aztec" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CommandLineInterface">
-    <configuration default="false" name="CommandLineInterface" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.prealpha.aztec.CommandLineInterface" />
+  <component name="RunManager" selected="Application.Transformer">
+    <configuration default="false" name="Transformer" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.prealpha.aztec.Transformer" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -375,6 +386,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -400,19 +424,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -450,12 +461,12 @@
       <method />
     </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.CommandLineInterface" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Transformer" />
       <item index="1" class="java.lang.String" itemvalue="Worksheet.WS: worksheet.sc" />
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.CommandLineInterface" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Transformer" />
         <item index="1" class="java.lang.String" itemvalue="Worksheet.WS: worksheet.sc" />
       </list>
     </recent_temporary>
@@ -503,13 +514,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5723473" sideWeight="0.4984375" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45016077" sideWeight="0.46666667" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45016077" sideWeight="0.46458334" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10989583" sideWeight="0.6366559" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36334404" sideWeight="0.5296875" order="2" side_tool="true" content_ui="tabs" x="-1233" y="291" width="1066" height="320" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10989583" sideWeight="0.5498392" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45016077" sideWeight="0.5317708" order="2" side_tool="true" content_ui="tabs" x="-1233" y="291" width="1066" height="320" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="92" y="92" width="1256" height="686" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -582,13 +593,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Generator.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="62" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/generators/Latex.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="23" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0">
@@ -644,37 +648,53 @@
         <state line="125" column="6" selection-start="5840" selection-end="5840" vertical-scroll-proportion="0.33264887" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Generator.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="62" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Lexer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="48" selection-start="700" selection-end="704" vertical-scroll-proportion="0.0">
+        <state line="5" column="7" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/generators/Html.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="60" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
+        <state line="44" column="40" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.8377823">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Transformer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="85" selection-start="2544" selection-end="2544" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="method#innert#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Generator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="40" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/scala/src/scala-library-src.jar!/scala/collection/generic/GenMapFactory.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="6" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testing.aztec">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="167" selection-start="94" selection-end="94" vertical-scroll-proportion="0.106583074">
+        <state line="6" column="32" selection-start="96" selection-end="96" vertical-scroll-proportion="0.20944558">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/generators/Latex.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="24" selection-start="1451" selection-end="1451" vertical-scroll-proportion="0.49119717">
+        <state line="57" column="36" selection-start="1991" selection-end="1991" vertical-scroll-proportion="0.5811088">
           <folding />
         </state>
       </provider>
