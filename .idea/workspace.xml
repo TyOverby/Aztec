@@ -27,7 +27,7 @@
     <file path="$PROJECT_DIR$/src/com/prealpha/aztec/package.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358991494063" ignored="false" />
     <file path="/Transformer.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359000133976" ignored="false" />
     <file path="/Html.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358998200714" ignored="false" />
-    <file path="/Latex.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359007789322" ignored="false" />
+    <file path="/Latex.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359009003175" ignored="false" />
     <file path="/CommandLineInterface.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359003391561" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359008253832" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -119,7 +119,7 @@
       <file leaf-file-name="Latex.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/generators/Latex.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="23" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.49119717">
+            <state line="44" column="24" selection-start="1451" selection-end="1451" vertical-scroll-proportion="0.49119717">
               <folding />
             </state>
           </provider>
@@ -166,9 +166,9 @@
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Transformer.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/CommandLineInterface.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Generator.scala" />
-        <option value="$PROJECT_DIR$/src/com/prealpha/aztec/generators/Latex.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Lexer.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/generators/Html.scala" />
+        <option value="$PROJECT_DIR$/src/com/prealpha/aztec/generators/Latex.scala" />
       </list>
     </option>
   </component>
@@ -204,6 +204,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -300,8 +302,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,16 +312,16 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -375,19 +375,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -413,6 +400,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -493,7 +493,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -503,13 +503,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5723473" sideWeight="0.4984375" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45016077" sideWeight="0.46875" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45016077" sideWeight="0.46666667" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10989583" sideWeight="0.6366559" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36334404" sideWeight="0.52760416" order="2" side_tool="true" content_ui="tabs" x="-1233" y="291" width="1066" height="320" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36334404" sideWeight="0.5296875" order="2" side_tool="true" content_ui="tabs" x="-1233" y="291" width="1066" height="320" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="92" y="92" width="1256" height="686" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -582,6 +582,34 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Generator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="62" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/generators/Latex.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="23" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/generators/Html.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="60" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Lexer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="48" selection-start="700" selection-end="704" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testing.aztec">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -637,16 +665,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/generators/Latex.scala">
+    <entry file="file://$PROJECT_DIR$/testing.aztec">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="23" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.49119717">
+        <state line="6" column="167" selection-start="94" selection-end="94" vertical-scroll-proportion="0.106583074">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing.aztec">
+    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/generators/Latex.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="167" selection-start="94" selection-end="94" vertical-scroll-proportion="0.106583074">
+        <state line="44" column="24" selection-start="1451" selection-end="1451" vertical-scroll-proportion="0.49119717">
           <folding />
         </state>
       </provider>

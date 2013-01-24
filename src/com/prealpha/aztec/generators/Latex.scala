@@ -36,15 +36,13 @@ object Latex extends Generator{
         case _       => "% UNKNOWN END SYMBOL: " + symbol
     }
 
-    def documentStart(document: List[String]): List[String] =
-        """
-          |\\documentclass[12pt]{article}
-          |\\usepackage{amsmath}
-          |\\title{\LaTeX}
-          |\\date{}
-          |\\begin{document}
-          |\\maketitle
-        """.stripMargin :: Nil
+    def documentStart(document: List[String]): List[String] = List(
+        "\\documentclass[12pt]{article}",
+        "\\usepackage{amsmath}",
+        "\\title{\\LaTeX}",
+        "\\date{}",
+        "\\begin{document}",
+        "\\maketitle")
 
     def documentEnd(document: List[String]): List[String] = "\\end{document}" :: Nil
 
