@@ -21,7 +21,7 @@ object Lexer {
 
         def lexLine(lineWithNumber: (String, Int)): (String, Int) = {
             val (line, number) = lineWithNumber
-            if (line.trim.endsWith("\\")){
+            if (line.trim.endsWith("\\") && !line.trim.endsWith("\\\\")){
 
                 (line.reverse.replaceFirst("\\\\","").reverse + lexLine(lineReader.next())._1.trim, number)
             }

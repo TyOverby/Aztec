@@ -1,12 +1,6 @@
 package com.prealpha.aztec
 
-
-object Generator{
-    val BULLET  = Some("*")
-    val QUOTE   = Some("\"")
-    val COMMENT = Some("#")
-    val TITLE   = None
-}
+import javax.xml.soap.SOAPMessage
 
 trait Generator {
     val shortName: String
@@ -20,3 +14,13 @@ trait Generator {
 
     def postProcess(input: List[String]): List[String]
 }
+
+object Generator{
+    val BULLET  = Some("*")
+    val DOLLAR  = Some("$")
+    val QUOTE   = Some("\"")
+    val COMMENT = Some("#")
+    val TITLE   = None
+}
+
+

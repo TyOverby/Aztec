@@ -13,7 +13,7 @@ object Html extends Generator{
         case QUOTE   => "<p>"
         case COMMENT => "<!--"
         case TITLE   => "<div class='title'>"
-        case _       => "<!-- UNKNOWN START SYMBOL: " + symbol.get + "-->"
+        case _       => "<!-- UNKNOWN START SYMBOL: " + symbol.get
     }
 
     def gen(token: Token): String ={
@@ -32,7 +32,7 @@ object Html extends Generator{
         case QUOTE   => "</p>"
         case COMMENT => "-->"
         case TITLE   => "</div>"
-        case _       => "UNKNOWN END SYMBOL: " + symbol
+        case _       => "UNKNOWN END SYMBOL: " + symbol + " -->"
     }
 
     def postProcess(input: List[String]): List[String] = input

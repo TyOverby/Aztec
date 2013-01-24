@@ -7,6 +7,7 @@ object Latex extends Generator{
     val shortName: String = "latex"
 
     def genStart(symbol: Option[String]): String = symbol match {
+        case DOLLAR  => "\\begin{align}"
         case QUOTE   => "\n"
         case BULLET  => "\\begin{itemize}"
         case COMMENT => ""
@@ -17,6 +18,7 @@ object Latex extends Generator{
     def gen(token: Token): String = {
         val content = token.content.getOrElse("")
         token.symbol match{
+            case DOLLAR  => content + " \\\\"
             case QUOTE   => content
             case BULLET  => "\\item " + content + "\n"
             case COMMENT => "% " + content
@@ -26,6 +28,7 @@ object Latex extends Generator{
     }
 
     def genEnd(symbol: Option[String]): String = symbol match{
+        case DOLLAR  => "\\end{align}"
         case QUOTE   =>  "\n"
         case BULLET  =>  "\\end{itemize}"
         case COMMENT => ""
@@ -35,15 +38,20 @@ object Latex extends Generator{
 
     def documentStart(document: List[String]): List[String] =
         """
-          | \\documentclass[12pt]{article}
-          |  \\usepackage{amsmath}
-          |  \\title{\LaTeX}
-          |  \\date{}
-          |  \\begin{document}
-          |    \\maketitle
+          |\\documentclass[12pt]{article}
+          |\\usepackage{amsmath}
+          |\\title{\LaTeX}
+          |\\date{}
+          |\\begin{document}
+          |\\maketitle
         """.stripMargin :: Nil
 
     def documentEnd(document: List[String]): List[String] = "\\end{document}" :: Nil
 
-    def postProcess(input: List[String]): List[String] = input
+    def postProcess(input: List[String]): List[String] = input match {
+        case Nil => Nil
+        // The last line before an end align shouldn't have a line break
+        case str :: "\\end{align}" :: xs => str.reverse.substring(2).reverse :: "\\end{align}" :: postProcess(xs)
+        case x :: xs => x :: postProcess(xs)
+    }
 }
