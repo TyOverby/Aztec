@@ -8,7 +8,7 @@ object Lexer {
     def countLeading(in: String): Int = {
         in.takeWhile{
             case ' '  => true
-            case '\n' => true
+            case '\t' => true
             case _ => false
         }.size
     }
@@ -22,8 +22,9 @@ object Lexer {
         def lexLine(lineWithNumber: (String, Int)): (String, Int) = {
             val (line, number) = lineWithNumber
             if (line.trim.endsWith("\\") && !line.trim.endsWith("\\\\")){
-
-                (line.reverse.replaceFirst("\\\\","").reverse + lexLine(lineReader.next())._1.trim, number)
+                val nextLine = lexLine(lineReader.next())._1.trim
+                (line.reverse.replaceFirst("\\\\","").reverse +
+                  (if (nextLine.startsWith("\\")) nextLine.substring(1) else nextLine), number)
             }
             else{
                 (line, number)
@@ -36,13 +37,15 @@ object Lexer {
             if (line.trim.length == 0) return EmptyLine(number)
 
             val indent = countLeading(line)
-            val broken = line.trim.split(" ")
+            val broken = line.trim.split(" ").flatMap(_.split("\t"))
             val first = broken.head
             val (symbol, rest) = if (isSymbolic(first))
-                                    (Some(first), broken.tail.mkString(" "))
+                                    (Some(first.dropWhile(x=> x.isDigit||x.isLetter)), broken.tail.mkString(" "))
                                     else (None, broken.mkString(" "))
 
-            VerboseToken(symbol,rest,indent,number)
+            val innerIndent = countLeading(line.substring(indent+symbol.getOrElse("").size))
+
+            VerboseToken(symbol,rest,indent, innerIndent,number)
         }
 
         lineReader.map(lexLine).map(genToken).toList

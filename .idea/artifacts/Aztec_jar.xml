@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="Aztec:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Aztec_jar</output-path>
+  <artifact type="jar" build-on-make="true" name="Aztec:jar">
+    <output-path>$USER_HOME$/root/bin</output-path>
     <root id="archive" name="Aztec.jar">
       <element id="module-output" name="Aztec" />
       <element id="extracted-dir" path="C:/Program Files (x86)/scala/lib/scala-library.jar" path-in-jar="/" />

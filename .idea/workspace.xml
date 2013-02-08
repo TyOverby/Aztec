@@ -9,9 +9,9 @@
     <list default="true" id="4130c5d4-e9ed-43f7-821f-ef339961d820" name="Default" comment="" />
     <ignored path="Aztec.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Lexer.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359007814473" ignored="false" />
-    <file path="/Token.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358992986832" ignored="false" />
-    <file path="/testing.aztec" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359069002457" ignored="false" />
+    <file path="/Lexer.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359852137583" ignored="false" />
+    <file path="/Token.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1360220942333" ignored="false" />
+    <file path="/testing.aztec" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359189367801" ignored="false" />
     <file path="/Tester.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358900351923" ignored="false" />
     <file path="/worksheet.sc" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358676986800" ignored="false" />
     <file path="/NodeTree.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358681002372" ignored="false" />
@@ -21,15 +21,14 @@
     <file path="/Node.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358732734729" ignored="false" />
     <file path="/Parser.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358901975354" ignored="false" />
     <file path="/a.dummy" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358734011294" ignored="false" />
-    <file path="/Generator.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359030302804" ignored="false" />
+    <file path="/Generator.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359859723115" ignored="false" />
     <file path="/ParserTests.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358814811078" ignored="false" />
     <file path="/fragment.java" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359029352482" ignored="false" />
     <file path="$PROJECT_DIR$/src/com/prealpha/aztec/package.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1358991494063" ignored="false" />
-    <file path="/Transformer.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359068304574" ignored="false" />
-    <file path="/Html.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359068319423" ignored="false" />
-    <file path="/Latex.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359069161742" ignored="false" />
+    <file path="/Transformer.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359152376031" ignored="false" />
+    <file path="/Html.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359152494629" ignored="false" />
+    <file path="/Latex.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359859840720" ignored="false" />
     <file path="/CommandLineInterface.scala" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359003391561" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="4130c5d4-e9ed-43f7-821f-ef339961d820" time="1359008253832" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,25 +81,6 @@
     <breakpoint_rules />
     <ui_properties />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="testing.aztec" pinned="false" current="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/testing.aztec">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state line="6" column="32" selection-start="96" selection-end="96" vertical-scroll-proportion="0.20944558">
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="Aztec" />
@@ -110,45 +90,25 @@
       <file leaf-file-name="Generator.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Generator.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="40" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+            <state line="19" column="57" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Latex.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Token.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Token.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="102" selection-start="217" selection-end="287" vertical-scroll-proportion="0.2061742">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Latex.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/generators/Latex.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="36" selection-start="1991" selection-end="1991" vertical-scroll-proportion="0.5811088">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenMapFactory.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/scala/src/scala-library-src.jar!/scala/collection/generic/GenMapFactory.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="6" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Transformer.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Transformer.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="85" selection-start="2544" selection-end="2544" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="method#innert#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lexer.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Lexer.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="7" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+            <state line="52" column="68" selection-start="1798" selection-end="1798" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -167,19 +127,19 @@
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Node.scala" />
         <option value="$PROJECT_DIR$/test/com/prealpha/aztec/ParserTests.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Parser.scala" />
-        <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Token.scala" />
         <option value="$PROJECT_DIR$/test/com/prealpha/aztec/Tester.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/beta/Generator.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/beta/generators/Html.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/beta/generators/Latex.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/beta/Transformer.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/CommandLineInterface.scala" />
-        <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Lexer.scala" />
-        <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Generator.scala" />
-        <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Transformer.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/generators/Html.scala" />
         <option value="$PROJECT_DIR$/testing.aztec" />
+        <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Transformer.scala" />
+        <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Lexer.scala" />
+        <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Generator.scala" />
         <option value="$PROJECT_DIR$/src/com/prealpha/aztec/generators/Latex.scala" />
+        <option value="$PROJECT_DIR$/src/com/prealpha/aztec/Token.scala" />
       </list>
     </option>
   </component>
@@ -215,7 +175,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -285,53 +244,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Generator.scala" />
+              <option name="myItemId" value="Token.scala" />
               <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aztec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aztec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aztec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/prealpha/aztec" />
+    <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/root/bin" />
+    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="aztec" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/prealpha/aztec" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
@@ -386,19 +332,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -424,6 +357,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -514,13 +460,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5723473" sideWeight="0.4984375" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45016077" sideWeight="0.46458334" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4488712" sideWeight="0.45347223" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.47543162" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10989583" sideWeight="0.5498392" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45016077" sideWeight="0.5317708" order="2" side_tool="true" content_ui="tabs" x="-1233" y="291" width="1066" height="320" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16197917" sideWeight="0.5511288" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4488712" sideWeight="0.5416667" order="2" side_tool="true" content_ui="tabs" x="-1233" y="291" width="1066" height="320" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="92" y="92" width="1256" height="686" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -593,39 +539,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/generators/Latex.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="23" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/generators/Html.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="60" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Lexer.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="48" selection-start="700" selection-end="704" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testing.aztec">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testing.aztec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files (x86)/scala/src/scala-library-src.jar!/scala/collection/SeqLike.scala">
@@ -643,58 +559,72 @@
         <state line="188" column="11" selection-start="6299" selection-end="6302" vertical-scroll-proportion="0.3629764" />
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/scala/src/scala-library-src.jar!/scala/Predef.scala">
+    <entry file="jar://C:/Program Files (x86)/scala/src/scala-library-src.jar!/scala/collection/generic/GenMapFactory.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="6" selection-start="5840" selection-end="5840" vertical-scroll-proportion="0.33264887" />
+        <state line="47" column="6" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Lexer.scala">
+    <entry file="jar://C:/Program Files (x86)/scala/src/scala-library-src.jar!/scala/collection/generic/GenericTraversableTemplate.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="7" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="138" column="6" selection-start="5135" selection-end="5135" vertical-scroll-proportion="0.33264887" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/scala/src/scala-library-src.jar!/scala/Option.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="166" column="32" selection-start="5775" selection-end="5782" vertical-scroll-proportion="-1.164271" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/scala/src/scala-library-src.jar!/scala/Predef.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="240" column="45" selection-start="10143" selection-end="10143" vertical-scroll-proportion="0.35109717" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/generators/Html.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="40" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.8377823">
+        <state line="38" column="10" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.6394984">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_aztec.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0714285">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Transformer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="85" selection-start="2544" selection-end="2544" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="method#innert#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="15" column="72" selection-start="487" selection-end="487" vertical-scroll-proportion="0.21316615" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Generator.scala">
+    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Lexer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="40" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/scala/src/scala-library-src.jar!/scala/collection/generic/GenMapFactory.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="6" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="47" column="56" selection-start="1686" selection-end="1686" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testing.aztec">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="32" selection-start="96" selection-end="96" vertical-scroll-proportion="0.20944558">
+        <state line="17" column="67" selection-start="243" selection-end="243" vertical-scroll-proportion="0.31863284" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Generator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="57" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/generators/Latex.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="36" selection-start="1991" selection-end="1991" vertical-scroll-proportion="0.5811088">
+        <state line="52" column="68" selection-start="1798" selection-end="1798" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/prealpha/aztec/Token.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="102" selection-start="217" selection-end="287" vertical-scroll-proportion="0.2061742">
           <folding />
         </state>
       </provider>

@@ -8,35 +8,35 @@ object Html extends Generator{
     val shortName: String = "html"
 
 
-    def genStart(token: Token): String = removeBlank(token){
-        token.symbol match {
+    def genStart(token: Token): Option[String] = removeBlank(token){
+        Some(token.symbol match {
             case BULLET  => "<ul>"
             case QUOTE   => "<p>"
             case COMMENT => "<!--"
             case TITLE   => "<div class='title'>"
             case _       => "<!-- UNKNOWN START SYMBOL: " + token.symbol.get
-        }
+        })
     }
 
-    def gen(token: Token): String = {
+    def gen(token: Token): Option[String] = {
         val content = token.content.getOrElse("")
-        token.symbol match {
+        Some(token.symbol match {
             case BULLET  => "<li>" + content + "</li>"
             case QUOTE   => content
             case COMMENT => content
             case TITLE   => "<h1>" + content + "</h1>"
             case _       => "UNKNOWN GEN SYMBOL: " + token.symbol
-        }
+        })
     }
 
-    def genEnd(token: Token): String = removeBlank(token){
-        token.symbol match {
+    def genEnd(token: Token): Option[String] = removeBlank(token){
+        Some(token.symbol match {
             case BULLET  => "</ul>"
             case QUOTE   => "</p>"
             case COMMENT => "-->"
             case TITLE   => "</div>"
             case _       => "UNKNOWN END SYMBOL: " + token.symbol + " -->"
-        }
+        })
     }
 
     def postProcess(input: List[String]): List[String] = input

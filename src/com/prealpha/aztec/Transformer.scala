@@ -23,8 +23,8 @@ object Transformer{
                     // the generated line and continue
                     // without modifying the stack.
                     if (top.symbol == head.symbol){
-                        val added = gen.gen(head)
-                        innert(ts.tail, stack, acc ++ List(added))
+                        val added = List(gen.gen(head))
+                        innert(ts.tail, stack, acc ++ added.flatten)
                      } else {
                         // Otherwise, End the current top and
                         // start another one for the head.
@@ -35,7 +35,7 @@ object Transformer{
                         val added = List(gen.genEnd(top),
                                          gen.genStart(head),
                                          gen.gen(head))
-                        innert(ts.tail, stack.pop.push(head), acc ++ added)
+                        innert(ts.tail, stack.pop.push(head), acc ++ added.flatten)
                      }
                 // If the head is greater than the top, we need
                 // to start a new starting point and add our
@@ -43,22 +43,20 @@ object Transformer{
                 case (t, h) if t < h => {
                     val added = List(gen.genStart(head),
                                     gen.gen(head))
-                    innert(ts.tail, stack.push(head),acc ++ added)
+                    innert(ts.tail, stack.push(head),acc ++ added.flatten)
                 }
                 // If the head is less than the top, then we need to close top
                 // and try again at one level below
                 case (t, h) if t > h => {
-                    val added = gen.genEnd(top)
-                    innert(ts, stack.pop, acc ++ List(added))
+                    val added = List(gen.genEnd(top))
+                    innert(ts, stack.pop, acc ++ added.flatten)
                 }
             }
         }
 
         val firstPass = innert(tokens ++ List(NonToken), Stack(NonToken), Nil)
-
         gen.postProcess((gen.documentStart(tokens)++firstPass++gen.documentEnd(tokens)).toList)
     }
-
 
     def main(args: Array[String]) {
         println (transform(lex(Source.fromFile("testing.aztec")), Latex).mkString("\n"))

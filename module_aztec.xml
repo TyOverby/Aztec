@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_aztec" default="compile.module.aztec">
+  <dirname property="module.aztec.basedir" file="${ant.file.module_aztec}"/>
+  
+  <property name="module.jdk.home.aztec" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.aztec" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.aztec" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.aztec" value="${compiler.args}"/>
+  
+  <property name="aztec.output.dir" value="${module.aztec.basedir}/out/production/Aztec"/>
+  <property name="aztec.testoutput.dir" value="${module.aztec.basedir}/out/test/Aztec"/>
+  
+  <path id="aztec.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="aztec.module.production.classpath">
+    <path refid="${module.jdk.classpath.aztec}"/>
+    <path refid="library.scala_library.classpath"/>
+  </path>
+  
+  <path id="aztec.runtime.production.module.classpath">
+    <pathelement location="${aztec.output.dir}"/>
+    <path refid="library.scala_library.classpath"/>
+  </path>
+  
+  <path id="aztec.module.classpath">
+    <path refid="${module.jdk.classpath.aztec}"/>
+    <pathelement location="${aztec.output.dir}"/>
+    <path refid="library.scala_library.classpath"/>
+  </path>
+  
+  <path id="aztec.runtime.module.classpath">
+    <pathelement location="${aztec.testoutput.dir}"/>
+    <pathelement location="${aztec.output.dir}"/>
+    <path refid="library.scala_library.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.aztec">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.aztec">
+    <patternset refid="excluded.from.module.aztec"/>
+  </patternset>
+  
+  <path id="aztec.module.sourcepath">
+    <dirset dir="${module.aztec.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.aztec" depends="compile.module.aztec.production,compile.module.aztec.tests" description="Compile module Aztec"/>
+  
+  <target name="compile.module.aztec.production" depends="register.custom.compilers" description="Compile module Aztec; production classes">
+    <mkdir dir="${aztec.output.dir}"/>
+    <javac2 destdir="${aztec.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.aztec}/javac">
+      <compilerarg line="${compiler.args.aztec}"/>
+      <bootclasspath refid="aztec.module.bootclasspath"/>
+      <classpath refid="aztec.module.production.classpath"/>
+      <src refid="aztec.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.aztec"/>
+    </javac2>
+    
+    <copy todir="${aztec.output.dir}">
+      <fileset dir="${module.aztec.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.aztec.tests" depends="register.custom.compilers,compile.module.aztec.production" description="compile module Aztec; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.aztec" description="cleanup module">
+    <delete dir="${aztec.output.dir}"/>
+    <delete dir="${aztec.testoutput.dir}"/>
+  </target>
+</project>
